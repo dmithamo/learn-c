@@ -19,7 +19,7 @@ int main() {
   int celc;
 
   printf("%12s %12s\n", "Celcius", "Farenheit");
-  for (celc = 2; celc <= 100; celc += 5) {
+  for (celc = 300; celc >= 0; celc -= 5) {
     printf("%12d %12.2f\n", celc, celc * 9.0 / 5.0 + 32);
   }
   return 0;
