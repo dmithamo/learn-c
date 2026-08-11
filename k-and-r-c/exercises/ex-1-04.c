@@ -3,6 +3,7 @@
 #define LOWER_TEMP_LIMIT_C 0
 #define STEP 20
 
+// Write a program to print the corresponding Celsius to Fahrenheit table.
 int main() {
   // int celc, farh;
   // int low, high, step;
