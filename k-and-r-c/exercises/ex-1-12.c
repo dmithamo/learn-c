@@ -4,6 +4,8 @@
 int main() {
   int c;
   int prev_was_whitespace = 0;
+
+  printf("Enter some words, separated by spaces and tabs\n\n");
   while ((c = getchar()) != EOF) {
     if (c == ' ' || c == '\t' || c == '\n') {
       if (prev_was_whitespace == 0) {
