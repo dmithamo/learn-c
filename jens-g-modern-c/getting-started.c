@@ -9,7 +9,7 @@ int main(int argc, [[maybe_unused]] char *argv[argc + 1]) {
       [3] = .00007,
   };
 
-  for (size_t i = 5; i; --i) {
+  for (size_t i = 4, iters = 0; iters < 7; --i, ++iters) {
     printf("element at %zu is %g, \tits square is %g\n", i, A[i], A[i] * A[i]);
   }
   return EXIT_SUCCESS;
