@@ -9,14 +9,8 @@ int main(int argc, [[maybe_unused]] char *argv[argc + 1]) {
       [3] = .00007,
   };
 
-  for (size_t i = 0; i < 5; ++i) {
-    if (i) {
-      bool a = printf("element at %zu is %g, \tits square is %g\n", i, A[i],
-                      A[i] * A[i]);
-      if (a) {
-        printf("%d\n", a);
-      }
-    }
+  for (size_t i = 5; i; --i) {
+    printf("element at %zu is %g, \tits square is %g\n", i, A[i], A[i] * A[i]);
   }
   return EXIT_SUCCESS;
 }
