@@ -21,6 +21,12 @@ int main(int argc, [[maybe_unused]] char *argv[argc + 1]) {
          sizeof(SIZE_MAX));
 
   printf("%-20s %20d %20d %20zu\n", "int", INT_MAX, INT_MIN, sizeof(INT_MAX));
+  printf("%-20s %20ld %20ld %20zu\n", "long", LONG_MAX, LONG_MIN,
+         sizeof(LONG_MAX));
+
+  int i = 0, j = 0;
+  printf("postfix: %d, \tprefix: %d\n", i++ + 1, ++j + 1);
+  printf("i: %d, \tj: %d\n", i, j);
 
   return EXIT_SUCCESS;
 }
