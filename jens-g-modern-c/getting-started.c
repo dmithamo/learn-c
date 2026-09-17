@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(int argc, [[maybe_unused]] char *argv[argc + 1]) {
   double A[5] = {
@@ -17,12 +18,25 @@ int main(int argc, [[maybe_unused]] char *argv[argc + 1]) {
 
   printf("\n");
   printf("%-20s %20s %20s %20s\n", "TYPE", "MAX", "MIN", "WIDTH");
+
   printf("%-20s %20zu %20zu %20zu\n", "size_t", SIZE_MAX, 0UL,
          sizeof(SIZE_MAX));
-
   printf("%-20s %20d %20d %20zu\n", "int", INT_MAX, INT_MIN, sizeof(INT_MAX));
   printf("%-20s %20ld %20ld %20zu\n", "long", LONG_MAX, LONG_MIN,
          sizeof(LONG_MAX));
+
+  printf("\n");
+
+  printf("Size of char: %zu\n", sizeof(char));
+  printf("Size of signed char: %zu\n", sizeof(signed char));
+  printf("Size of unsigned char: %zu\n", sizeof(unsigned char));
+  printf("Size of bool: %zu\n", sizeof(_Bool));
+  printf("Size of short: %zu\n", sizeof(short));
+  printf("Size of time_t: %zu", sizeof(time_t));
+  printf("\n");
+  printf("-1U = %u\n", -1U);
+  printf("-1 = %d\n", -1);
+  printf("\n");
 
   int i = 0, j = 0;
   printf("postfix: %d, \tprefix: %d\n", i++ + 1, ++j + 1);
