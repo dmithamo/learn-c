@@ -38,7 +38,7 @@ int main(int argc, [[maybe_unused]] char *argv[argc + 1]) {
   printf("-1 = %d\n", -1);
   printf("\n");
 
-  int i = 0, j = 0;
+  int i = {}, j = 0;
   printf("postfix: %d, \tprefix: %d\n", i++ + 1, ++j + 1);
   printf("i: %d, \tj: %d\n", i, j);
 
