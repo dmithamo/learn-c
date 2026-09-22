@@ -12,6 +12,9 @@ int main(int argc, [[maybe_unused]] char *argv[argc + 1]) {
       [3] = .00007,
   };
 
+  bool a = true;
+  printf("%d\n\n\n", a);
+
   for (size_t i = 4; i < 5; --i) {
     printf("element at %zu is %g, \tits square is %g\n", i, A[i], A[i] * A[i]);
   }
@@ -42,5 +45,6 @@ int main(int argc, [[maybe_unused]] char *argv[argc + 1]) {
   printf("postfix: %d, \tprefix: %d\n", i++ + 1, ++j + 1);
   printf("i: %d, \tj: %d\n", i, j);
 
-  return EXIT_SUCCESS;
+  exit(0);
+  // return EXIT_SUCCESS;
 }
