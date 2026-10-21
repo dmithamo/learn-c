@@ -14,9 +14,7 @@ once they get to some restpoint. It fuels them for the rest of the hike. I have 
 
 ## What books am I using?
 
-- K&R C, 2nd ed.
-- Programming C: A Modern Approach
-- Beej's Guide to C.
+- C Programming: A Modern Approach
 
 The plan is to work through the first one in full, doing all the exercises, or most of them, and refer to the other two as necessary,
 to clarify things and stuff.
